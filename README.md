@@ -5,7 +5,7 @@
 --------------------
 [Схема базы данных](https://github.com/elisntdead/DatabaseSQL_PartyService#схема-базы-данных)
 
-[Запросы SQL](https://github.com/elisntdead/DatabaseSQL_PartyService#запросы-sql)
+[Запросы SQL](https://github.com/elisntdead/DatabaseSQL_PartyService#запросы-sql-к-базе-данных)
 
 Схема базы данных
 --------------------
