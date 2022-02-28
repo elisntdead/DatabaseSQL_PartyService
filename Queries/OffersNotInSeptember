@@ -1,0 +1,5 @@
+SELECT Offers.id, Offers.name
+FROM Offers
+EXCEPT SELECT Offers.id, Offers.name
+FROM Offers INNER JOIN OffersInOrder ON OffersInOrder.id_offer = Offers.id
+INNER JOIN Orders ON Orders.id = OffersInOrder.id_order AND Orders.date BETWEEN '2021/09/01' AND '2021/10/01'

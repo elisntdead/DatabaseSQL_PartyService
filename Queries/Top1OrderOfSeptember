@@ -1,0 +1,7 @@
+SELECT Offers.id, Offers.Name, SUM(OffersInOrder.amount) AS Total 
+FROM Offers INNER JOIN OffersInOrder ON OffersInOrder.id_offer = Offers.id
+INNER JOIN Orders ON Orders.id = OffersInOrder.id_order
+WHERE Orders.date between '2021/09/01' and '2021/10/01'
+GROUP BY Offers.id, Offers.Name
+ORDER BY Total DESC
+LIMIT 1

@@ -1,0 +1,3 @@
+SELECT DISTINCT Orders.id
+FROM Orders INNER JOIN (Offers INNER JOIN OffersInOrder ON Offers.id = OffersInOrder.id_offer) ON Orders.id = OffersInOrder.id_order
+WHERE Offers.id<>3;

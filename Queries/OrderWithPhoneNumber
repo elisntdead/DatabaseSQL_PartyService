@@ -1,0 +1,3 @@
+SELECT DISTINCT Orders.id
+FROM Clients INNER JOIN Orders ON Clients.id = Orders.id_client
+WHERE Clients.phone Like '7(999)%'

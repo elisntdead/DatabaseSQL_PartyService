@@ -1,0 +1,5 @@
+SELECT Orders.id,  SUM(OffersInOrder.amount * OffersInOrder.price) AS orderPrice
+FROM Orders INNER JOIN OffersInOrder ON Orders.id = OffersInOrder.id_order INNER JOIN Offers ON Offers.id = OffersInOrder.id_offer
+GROUP BY Orders.id
+ORDER BY orderPrice DESC
+LIMIT 3;
